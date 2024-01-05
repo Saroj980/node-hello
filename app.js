@@ -1,7 +1,8 @@
 // app.js
-function greet(name) {
-  return `Hello, ${name}!`;
-}
+const greet = require('./app');
 
-module.exports = greet;
+test('greeting should be "Hello, World!"', () => {
+  const result = greet();
+  expect(result).toBe('Hello, World!');
+});
 
