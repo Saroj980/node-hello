@@ -7,8 +7,8 @@ describe('greet function', () => {
     expect(result).toBe('Hello, Node!');
   });
 
-  test('should handle empty name', () => {
-    const result = greet('');
-    expect(result).toBe('Hello, !');
-  });
+test('intentional error: greeting should be "Hola, Mundo!"', () => {
+  const result = greet();
+  expect(result).toBe('Hola, Mundo!'); // Intentional error, should fail
 });
+
